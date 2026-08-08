@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamal Mansour Kamal | Aspiring AI Engineer & Software Engineer</title>
+    <meta name="description"
+        content="Personal Portfolio of Kamal Mansour Kamal - Computer Science Student, Aspiring AI Engineer, and Software Engineer specializing in Machine Learning, Embedded Systems, and Data Science.">
+    <meta name="keywords"
+        content="Kamal Mansour Kamal, AI Engineer, Machine Learning, Software Engineer, Computer Science, Data Science, Embedded Systems, Arduino, Python, Portfolio">
+    <meta name="author" content="Kamal Mansour Kamal">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Kamal Mansour Kamal | AI & Software Engineer Portfolio">
+    <meta property="og:description"
+        content="Building intelligent solutions that solve real-world problems through Artificial Intelligence, Software Engineering, and Embedded Systems.">
+    <meta property="og:image" content="assets/images/hero_avatar.png">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+    <!-- Neural Network Background Canvas -->
+    <canvas id="neural-canvas"></canvas>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-brand">
+                <span class="brand-accent">&lt;</span>Kamal<span class="brand-dot">.</span>Mansour<span
+                    class="brand-accent">/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a>
+                <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+                <a href="#process" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Process</a>
+                <a href="#projects" class="nav-link"><i class="fa-solid fa-rocket"></i> Projects</a>
+                <a href="#services" class="nav-link"><i class="fa-solid fa-gears"></i> Services</a>
+                <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Timeline</a>
+                <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="btn btn-outline btn-sm cv-btn" onclick="openCVModal()">
+                    <i class="fa-solid fa-file-arrow-down"></i> CV
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="status-badge glow-pulse">
+                        <span class="pulse-dot"></span> Open for Internships & Collaborations
+                    </div>
+
+                    <h3 class="hero-greeting">Hello, I'm</h3>
+                    <h1 class="hero-name gradient-text">Kamal Mansour Kamal</h1>
+
+                    <h2 class="hero-title">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor-blink">|</span>
+                    </h2>
+
+                    <div class="hero-tagline-box">
+                        <span class="tagline-badge"><i class="fa-solid fa-compass"></i> Tagline</span>
+                        <p class="hero-tagline">Learning. Building. Innovating. Improving Lives.</p>
+                    </div>
+
+                    <p class="hero-description">
+                        I am a Computer Science student passionate about Artificial Intelligence, Machine Learning,
+                        Software Engineering, and Embedded Systems. I enjoy transforming ideas into intelligent,
+                        practical solutions while continuously expanding my technical skills through real-world
+                        projects, self-learning, and innovation.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary glow-btn">
+                            <i class="fa-solid fa-laptop-code"></i> View Projects
+                        </a>
+                        <button class="btn btn-secondary" onclick="openCVModal()">
+                            <i class="fa-solid fa-download"></i> Download CV
+                        </button>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <div class="hero-contact-links">
+                        <a href="mailto:kamalmansourkamal807@gmail.com" class="hero-contact-chip" title="Email Me">
+                            <i class="fa-solid fa-envelope"></i> <span>kamalmansourkamal807@gmail.com</span>
+                        </a>
+                        <a href="tel:+201068105155" class="hero-contact-chip" title="Call Me">
+                            <i class="fa-solid fa-phone"></i> <span>+20 106 810 5155</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kamal-mansour-472911361" target="_blank" rel="noopener noreferrer"
+                            class="hero-contact-chip" title="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin-in"></i> <span>LinkedIn</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="4">4+</span>
+                            <span class="stat-label">Core Domains</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="10">10+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Commitment to Growth</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-ring ring-1"></div>
+                        <div class="avatar-ring ring-2"></div>
+                        <div class="avatar-glow"></div>
+                        <img src="assets/images/hero_avatar.png" alt="Kamal Mansour Kamal" class="avatar-img">
+
+                        <!-- Floating Tech Pills -->
+                        <div class="tech-pill pill-1 float-anim">
+                            <i class="fa-brands fa-python"></i> Python & AI
+                        </div>
+                        <div class="tech-pill pill-2 float-anim-reverse">
+                            <i class="fa-solid fa-microchip"></i> Arduino & IoT
+                        </div>
+                        <div class="tech-pill pill-3 float-anim">
+                            <i class="fa-solid fa-brain"></i> Machine Learning
+                        </div>
+                        <div class="tech-pill pill-4 float-anim-reverse">
+                            <i class="fa-solid fa-palette"></i> UI & Graphic Design
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Brand Statement Section -->
+        <section class="statement-section">
+            <div class="container">
+                <div class="statement-card glass-panel text-center reveal">
+                    <div class="statement-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <h3 class="statement-title">Professional Brand Statement</h3>
+                    <p class="statement-text">
+                        "Building intelligent solutions that solve real-world problems through Artificial Intelligence,
+                        Software Engineering, and Embedded Systems while continuously learning and creating meaningful
+                        technology that improves people's lives."
+                    </p>
+                    <div class="statement-author">— Kamal Mansour Kamal</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me & Professional Summary Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Get To Know Me</span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Professional Summary Card -->
+                    <div class="about-card glass-panel reveal">
+                        <div class="card-badge"><i class="fa-solid fa-id-card"></i> Executive Summary</div>
+                        <h3 class="card-title">Professional Summary</h3>
+                        <p>
+                            I am an aspiring Artificial Intelligence Engineer driven by curiosity, innovation, and
+                            continuous learning. My interests span Artificial Intelligence, Machine Learning, Software
+                            Engineering, Data Science, and Embedded Systems, where I enjoy designing and developing
+                            solutions that address real-world challenges.
+                        </p>
+                        <p>
+                            Beyond writing code, I believe technology should create meaningful value for people. This
+                            philosophy motivates me to explore modern technologies, strengthen my technical expertise,
+                            and build practical applications that combine intelligence, creativity, and usability.
+                        </p>
+                        <p>
+                            Alongside software development, I have experience in Graphic Design, allowing me to
+                            integrate technical precision with creative thinking to deliver polished and engaging
+                            digital experiences.
+                        </p>
+                    </div>
+
+                    <!-- Personal Philosophy & Story -->
+                    <div class="about-card glass-panel reveal" style="animation-delay: 0.2s;">
+                        <div class="card-badge"><i class="fa-solid fa-lightbulb"></i> My Philosophy</div>
+                        <h3 class="card-title">Driven by Purpose</h3>
+                        <blockquote class="about-quote">
+                            "Technology has the power to transform lives, and that belief shapes the way I learn, build,
+                            and innovate."
+                        </blockquote>
+                        <p>
+                            I am currently pursuing a Bachelor's degree in Computer Science while continuously expanding
+                            my knowledge through self-learning platforms such as <strong>IBM SkillsBuild, Coursera,
+                                Udemy, and YouTube</strong>.
+                        </p>
+                        <p>
+                            My primary interests lie in Artificial Intelligence, Machine Learning, Data Science, and
+                            Software Engineering. I enjoy working on practical projects that strengthen my understanding
+                            of intelligent systems while improving my problem-solving abilities.
+                        </p>
+                        <p>
+                            In addition to software development, I have experience with Embedded Systems, allowing me to
+                            bridge software and hardware to create smart, interactive solutions. I also have a strong
+                            passion for Graphic Design, which helps me create user-friendly and visually appealing
+                            digital experiences.
+                        </p>
+                        <p>
+                            I approach every project with careful planning, structured development, and thorough testing
+                            because I believe that quality is built through preparation and continuous improvement.
+                        </p>
+                        <p class="highlight-text">
+                            <i class="fa-solid fa-bullseye"></i> <strong>Long-term Ambition:</strong> To become a highly
+                            skilled Artificial Intelligence Engineer and eventually establish my own AI company
+                            dedicated to developing innovative technologies that improve people's lives.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Career Objective, Mission, Vision, Philosophy Cards Grid -->
+                <div class="foundation-grid">
+                    <div class="foundation-card glass-panel reveal">
+                        <div class="foundation-icon icon-cyan"><i class="fa-solid fa-crosshair"></i></div>
+                        <h4>Career Objective</h4>
+                        <p>To build a successful career as an Artificial Intelligence Engineer by continuously advancing
+                            my expertise in Machine Learning, Deep Learning, Data Science, and Software Engineering
+                            while contributing to innovative technologies that solve real-world problems and create
+                            lasting positive impact.</p>
+                    </div>
+
+                    <div class="foundation-card glass-panel reveal" style="animation-delay: 0.1s;">
+                        <div class="foundation-icon icon-purple"><i class="fa-solid fa-rocket"></i></div>
+                        <h4>Personal Mission</h4>
+                        <p>To continuously learn, innovate, and develop intelligent technologies that improve people's
+                            lives while inspiring others through creativity, curiosity, and lifelong learning.</p>
+                    </div>
+
+                    <div class="foundation-card glass-panel reveal" style="animation-delay: 0.2s;">
+                        <div class="foundation-icon icon-emerald"><i class="fa-solid fa-eye"></i></div>
+                        <h4>Personal Vision</h4>
+                        <p>To become a recognized Artificial Intelligence Engineer and build a leading Artificial
+                            Intelligence company that develops innovative solutions capable of making a meaningful
+                            impact on society.</p>
+                    </div>
+
+                    <div class="foundation-card glass-panel reveal" style="animation-delay: 0.3s;">
+                        <div class="foundation-icon icon-amber"><i class="fa-solid fa-gem"></i></div>
+                        <h4>Professional Philosophy</h4>
+                        <p>Technology should improve people's lives, and every project is an opportunity to create
+                            meaningful impact through innovation, creativity, and continuous learning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section class="values-section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Guiding Principles</span>
+                    <h2 class="section-title">Core <span class="gradient-text">Values</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="values-grid">
+                    <div class="value-card glass-panel reveal">
+                        <div class="value-number">01</div>
+                        <div class="value-icon"><i class="fa-solid fa-book-open"></i></div>
+                        <h3>Continuous Learning</h3>
+                        <p>I believe every new technology represents an opportunity to grow, improve, and expand my
+                            capabilities.</p>
+                    </div>
+
+                    <div class="value-card glass-panel reveal" style="animation-delay: 0.1s;">
+                        <div class="value-number">02</div>
+                        <div class="value-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h3>Innovation</h3>
+                        <p>I enjoy transforming creative ideas into practical, intelligent solutions that solve
+                            meaningful problems.</p>
+                    </div>
+
+                    <div class="value-card glass-panel reveal" style="animation-delay: 0.2s;">
+                        <div class="value-number">03</div>
+                        <div class="value-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                        <h3>Problem Solving</h3>
+                        <p>Every challenge is an opportunity to learn, improve, and create better solutions.</p>
+                    </div>
+
+                    <div class="value-card glass-panel reveal" style="animation-delay: 0.3s;">
+                        <div class="value-number">04</div>
+                        <div class="value-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                        <h3>Creativity</h3>
+                        <p>I combine technical knowledge with creative thinking to build engaging and impactful digital
+                            experiences.</p>
+                    </div>
+
+                    <div class="value-card glass-panel reveal" style="animation-delay: 0.4s;">
+                        <div class="value-number">05</div>
+                        <div class="value-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>Quality</h3>
+                        <p>Planning carefully, testing thoroughly, and delivering reliable solutions are principles I
+                            apply to every project.</p>
+                    </div>
+
+                    <div class="value-card glass-panel reveal" style="animation-delay: 0.5s;">
+                        <div class="value-number">06</div>
+                        <div class="value-icon"><i class="fa-solid fa-users"></i></div>
+                        <h3>Leadership</h3>
+                        <p>I enjoy taking initiative, organizing teamwork, and motivating others toward achieving shared
+                            goals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Work With Me Section -->
+        <section class="why-me-section">
+            <div class="container">
+                <div class="why-me-box glass-panel reveal">
+                    <div class="why-me-header">
+                        <div>
+                            <span class="section-subtitle">Key Strengths & Differentiators</span>
+                            <h2 class="section-title">Why Work <span class="gradient-text">With Me</span></h2>
+                        </div>
+                        <div class="badge-icon"><i class="fa-solid fa-award"></i></div>
+                    </div>
+
+                    <div class="why-me-grid">
+                        <div class="why-item">
+                            <div class="why-check"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="why-content">
+                                <h4>Passionate about Artificial Intelligence and Machine Learning</h4>
+                                <p>Driven to stay at the forefront of cutting-edge AI breakthroughs and modern
+                                    predictive algorithms.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-item">
+                            <div class="why-check"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="why-content">
+                                <h4>Strong analytical and problem-solving mindset</h4>
+                                <p>Methodical approach to dissecting complex challenges into manageable algorithmic
+                                    steps.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-item">
+                            <div class="why-check"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="why-content">
+                                <h4>Fast learner with a commitment to continuous improvement</h4>
+                                <p>Adaptable and quick to master emerging frameworks, tools, and technical paradigms.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="why-item">
+                            <div class="why-check"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="why-content">
+                                <h4>Experience in Software Engineering and Embedded Systems</h4>
+                                <p>Unique capability to bridge low-level microcontrollers with high-level AI software
+                                    architectures.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-item">
+                            <div class="why-check"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="why-content">
+                                <h4>Creative thinker with Graphic Design experience</h4>
+                                <p>Combines technical logic with graphic design aesthetic to deliver user-centered
+                                    experiences.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-item">
+                            <div class="why-check"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="why-content">
+                                <h4>Strong attention to quality, planning, and testing</h4>
+                                <p>Rigorous pre-development design and comprehensive testing to ensure robust code
+                                    reliability.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-item">
+                            <div class="why-check"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="why-content">
+                                <h4>Self-motivated learner dedicated to mastering modern technologies</h4>
+                                <p>Proactive self-education via top industry platforms like IBM SkillsBuild, Coursera, &
+                                    Udemy.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-item">
+                            <div class="why-check"><i class="fa-solid fa-circle-check"></i></div>
+                            <div class="why-content">
+                                <h4>Focused on building practical, real-world solutions</h4>
+                                <p>Oriented toward tangible value creation that solves practical human and industry
+                                    problems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Technical Expertise</span>
+                    <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Skill Controls: Search & Category Filter Tabs -->
+                <div class="skill-controls reveal">
+                    <div class="skill-search-wrapper">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="skill-search"
+                            placeholder="Search skills (e.g., Python, Arduino, Machine Learning)..."
+                            aria-label="Search skills">
+                        <button id="clear-skill-search" class="clear-btn" aria-label="Clear Search"><i
+                                class="fa-solid fa-xmark"></i></button>
+                    </div>
+
+                    <div class="skill-tabs" id="skill-tabs">
+                        <button class="skill-tab active" data-category="all">All Skills</button>
+                        <button class="skill-tab" data-category="languages">Programming Languages</button>
+                        <button class="skill-tab" data-category="ai-ds">AI & Data Science</button>
+                        <button class="skill-tab" data-category="web">Web Development</button>
+                        <button class="skill-tab" data-category="embedded">Embedded Systems</button>
+                        <button class="skill-tab" data-category="design">Design Tools</button>
+                        <button class="skill-tab" data-category="dev-tools">Dev Tools</button>
+                        <button class="skill-tab" data-category="platforms">Learning Platforms</button>
+                    </div>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-card glass-panel" data-category="languages">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-python skill-icon icon-python"></i>
+                            <span class="skill-tag">Programming</span>
+                        </div>
+                        <h3>Python</h3>
+                        <p>Core language for Machine Learning, Data Preprocessing, Data Analysis, and AI model
+                            development.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="languages">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-code skill-icon icon-cpp"></i>
+                            <span class="skill-tag">Programming</span>
+                        </div>
+                        <h3>C++</h3>
+                        <p>High-performance object-oriented programming, algorithms, and low-level system optimization.
+                        </p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="languages">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-java skill-icon icon-java"></i>
+                            <span class="skill-tag">Programming</span>
+                        </div>
+                        <h3>Java</h3>
+                        <p>Object-oriented software development, robust application architecture, and algorithmic logic.
+                        </p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="languages web">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-js skill-icon icon-js"></i>
+                            <span class="skill-tag">Programming & Web</span>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Dynamic client-side interactivity, DOM manipulation, async operations, and responsive web
+                            logic.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="languages web">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-html5 skill-icon icon-html"></i>
+                            <span class="skill-tag">Web & Markup</span>
+                        </div>
+                        <h3>HTML5</h3>
+                        <p>Semantic document structuring, accessibility standards, and SEO best practices.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="languages web">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-css3-alt skill-icon icon-css"></i>
+                            <span class="skill-tag">Web & Styling</span>
+                        </div>
+                        <h3>CSS3</h3>
+                        <p>Modern layouts (Flexbox/Grid), Glassmorphism, animations, responsive media queries, and
+                            styling.</p>
+                    </div>
+
+                    <!-- AI & Data Science -->
+                    <div class="skill-card glass-panel" data-category="ai-ds">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-brain skill-icon icon-ai"></i>
+                            <span class="skill-tag">AI & Data Science</span>
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>Supervised and unsupervised algorithm implementations, classification models, and regression
+                            analysis.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="ai-ds">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-network-wired skill-icon icon-ai"></i>
+                            <span class="skill-tag">AI & Data Science</span>
+                        </div>
+                        <h3>Deep Learning Fundamentals</h3>
+                        <p>Foundations of Artificial Neural Networks (ANNs), backpropagation, and multi-layer
+                            perceptrons.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="ai-ds">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-chart-line skill-icon icon-ds"></i>
+                            <span class="skill-tag">AI & Data Science</span>
+                        </div>
+                        <h3>Data Analysis</h3>
+                        <p>Exploratory Data Analysis (EDA), statistical evaluation, and data visualization technique
+                            implementation.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="ai-ds">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-filter skill-icon icon-ds"></i>
+                            <span class="skill-tag">AI & Data Science</span>
+                        </div>
+                        <h3>Data Preprocessing</h3>
+                        <p>Handling missing values, outlier detection, scaling, encoding categorical variables, and
+                            SMOTE balancing.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="ai-ds">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-sliders skill-icon icon-ds"></i>
+                            <span class="skill-tag">AI & Data Science</span>
+                        </div>
+                        <h3>Feature Engineering</h3>
+                        <p>Transforming raw variables into meaningful features to maximize predictive model accuracy.
+                        </p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="ai-ds">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-square-check skill-icon icon-ds"></i>
+                            <span class="skill-tag">AI & Data Science</span>
+                        </div>
+                        <h3>Model Evaluation</h3>
+                        <p>Precision, Recall, F1-Score, Confusion Matrix, ROC-AUC curves, and cross-validation
+                            techniques.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="ai-ds">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-cubes skill-icon icon-python"></i>
+                            <span class="skill-tag">Library</span>
+                        </div>
+                        <h3>Scikit-learn</h3>
+                        <p>Building predictive machine learning pipelines, classification, regression, and
+                            hyperparameter tuning.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="ai-ds">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-bolt skill-icon icon-amber"></i>
+                            <span class="skill-tag">Library</span>
+                        </div>
+                        <h3>XGBoost</h3>
+                        <p>Gradient boosting framework for optimized model performance on complex structured tabular
+                            datasets.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="ai-ds">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-table skill-icon icon-cyan"></i>
+                            <span class="skill-tag">Library</span>
+                        </div>
+                        <h3>Pandas</h3>
+                        <p>Dataframe manipulation, dataset aggregation, cleaning, restructuring, and structured data
+                            handling.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="ai-ds">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-calculator skill-icon icon-purple"></i>
+                            <span class="skill-tag">Library</span>
+                        </div>
+                        <h3>NumPy</h3>
+                        <p>Vectorized multi-dimensional matrix operations, numerical computation, and mathematical
+                            calculations.</p>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="skill-card glass-panel" data-category="web">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-mobile-screen-button skill-icon icon-cyan"></i>
+                            <span class="skill-tag">Web Dev</span>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Building fluid layouts that automatically adapt seamlessly across mobile, tablet, and desktop
+                            screens.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="web">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-display skill-icon icon-purple"></i>
+                            <span class="skill-tag">Web Dev</span>
+                        </div>
+                        <h3>UI Development</h3>
+                        <p>Crafting polished, accessible, modern visual interfaces with glassmorphism and
+                            micro-interactions.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="web">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-layer-group skill-icon icon-emerald"></i>
+                            <span class="skill-tag">Web Dev</span>
+                        </div>
+                        <h3>Front-End Fundamentals</h3>
+                        <p>Strong mastery of fundamental web standards, DOM event handling, performance tuning, and
+                            layout math.</p>
+                    </div>
+
+                    <!-- Embedded Systems -->
+                    <div class="skill-card glass-panel" data-category="embedded">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-microchip skill-icon icon-emerald"></i>
+                            <span class="skill-tag">Embedded Systems</span>
+                        </div>
+                        <h3>Arduino</h3>
+                        <p>Prototyping automated hardware systems, C/C++ micro-controller programming, and sensor
+                            integration.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="embedded">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-memory skill-icon icon-amber"></i>
+                            <span class="skill-tag">Embedded Systems</span>
+                        </div>
+                        <h3>Microcontrollers</h3>
+                        <p>Programming and interfacing with integrated microcontrollers, GPIO control, and PWM signals.
+                        </p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="embedded">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-wave-square skill-icon icon-cyan"></i>
+                            <span class="skill-tag">Embedded Systems</span>
+                        </div>
+                        <h3>Electronic Sensors</h3>
+                        <p>Interfacing light (LDR), temperature, ultrasonic, proximity sensors with real-time signal
+                            processing.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="embedded">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-plug-circuit skill-icon icon-purple"></i>
+                            <span class="skill-tag">Embedded Systems</span>
+                        </div>
+                        <h3>Circuit Design</h3>
+                        <p>Breadboard prototyping, schematic analysis, component power calculation, and hardware wiring.
+                        </p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="embedded">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-gears skill-icon icon-emerald"></i>
+                            <span class="skill-tag">Embedded Systems</span>
+                        </div>
+                        <h3>Hardware Integration</h3>
+                        <p>Bridging physical hardware components, motors, and relays with intelligent automated software
+                            logic.</p>
+                    </div>
+
+                    <!-- Design Tools -->
+                    <div class="skill-card glass-panel" data-category="design">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-image skill-icon icon-amber"></i>
+                            <span class="skill-tag">Design Tool</span>
+                        </div>
+                        <h3>Adobe Photoshop</h3>
+                        <p>Digital graphic design, photo editing, visual asset creation, and brand identity graphics.
+                        </p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="design">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-film skill-icon icon-purple"></i>
+                            <span class="skill-tag">Design Tool</span>
+                        </div>
+                        <h3>Adobe After Effects</h3>
+                        <p>Motion graphics, video editing, intro animations, and dynamic visual storytelling assets.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="design">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-figma skill-icon icon-cyan"></i>
+                            <span class="skill-tag">Design Tool</span>
+                        </div>
+                        <h3>Figma</h3>
+                        <p>UI/UX design wireframing, interactive prototyping, layout design, and design system creation.
+                        </p>
+                    </div>
+
+                    <!-- Development Tools -->
+                    <div class="skill-card glass-panel" data-category="dev-tools">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-git-alt skill-icon icon-amber"></i>
+                            <span class="skill-tag">Dev Tool</span>
+                        </div>
+                        <h3>Git</h3>
+                        <p>Version control management, branching strategies, commit history tracking, and repository
+                            management.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="dev-tools">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-github skill-icon icon-cyan"></i>
+                            <span class="skill-tag">Dev Tool</span>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>Open-source project publishing, collaborative code management, pull requests, and
+                            documentation.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="dev-tools">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-terminal skill-icon icon-purple"></i>
+                            <span class="skill-tag">Dev Tool</span>
+                        </div>
+                        <h3>Visual Studio Code</h3>
+                        <p>Primary IDE workspace, extension customization, code linting, debugging, and efficient
+                            development workflow.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="dev-tools">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-book-bookmark skill-icon icon-emerald"></i>
+                            <span class="skill-tag">Dev Tool</span>
+                        </div>
+                        <h3>Jupyter Notebook</h3>
+                        <p>Interactive Python data exploration, Machine Learning model experimentation, and markdown
+                            reporting.</p>
+                    </div>
+
+                    <!-- Learning Platforms -->
+                    <div class="skill-card glass-panel" data-category="platforms">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-graduation-cap skill-icon icon-cyan"></i>
+                            <span class="skill-tag">Platform</span>
+                        </div>
+                        <h3>IBM SkillsBuild</h3>
+                        <p>Professional coursework in Artificial Intelligence, Machine Learning, and Enterprise IT
+                            fundamentals.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="platforms">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-certificate skill-icon icon-purple"></i>
+                            <span class="skill-tag">Platform</span>
+                        </div>
+                        <h3>Coursera</h3>
+                        <p>Specialized computer science and deep learning courses taught by leading university
+                            professors.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="platforms">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-laptop-file skill-icon icon-amber"></i>
+                            <span class="skill-tag">Platform</span>
+                        </div>
+                        <h3>Udemy</h3>
+                        <p>Practical hands-on courses in software engineering, embedded systems, and modern web
+                            frameworks.</p>
+                    </div>
+
+                    <div class="skill-card glass-panel" data-category="platforms">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-youtube skill-icon icon-html"></i>
+                            <span class="skill-tag">Platform</span>
+                        </div>
+                        <h3>YouTube</h3>
+                        <p>Self-directed research into developer tutorials, tech talks, open-source project
+                            walkthroughs, & AI trends.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Working Style / Development Process Section -->
+        <section id="process" class="process-section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Structured Workflow</span>
+                    <h2 class="section-title">Working <span class="gradient-text">Style</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="process-intro glass-panel text-center reveal">
+                    <i class="fa-solid fa-quote-left quote-decor"></i>
+                    <h3 class="process-quote">"Every successful project begins with careful planning."</h3>
+                    <p>My development process follows a disciplined, structured workflow designed to yield optimal
+                        quality, maintainability, and real-world value:</p>
+                </div>
+
+                <!-- Process Steps Stepper -->
+                <div class="process-steps">
+                    <div class="process-step-card glass-panel reveal">
+                        <div class="step-badge">Step 1</div>
+                        <div class="step-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3>Understanding the problem</h3>
+                        <p>Deeply analyzing core user needs, gathering system requirements, defining constraints, and
+                            establishing quantitative success criteria before writing a single line of code.</p>
+                    </div>
+
+                    <div class="process-step-card glass-panel reveal" style="animation-delay: 0.1s;">
+                        <div class="step-badge">Step 2</div>
+                        <div class="step-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                        <h3>Planning the solution</h3>
+                        <p>Architecting the optimal technical approach, selecting proper algorithms, data structures,
+                            and tech stacks, and constructing detailed development milestones.</p>
+                    </div>
+
+                    <div class="process-step-card glass-panel reveal" style="animation-delay: 0.2s;">
+                        <div class="step-badge">Step 3</div>
+                        <div class="step-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+                        <h3>Designing the system</h3>
+                        <p>Creating modular system blueprints, data flow diagrams, pipeline schemas, component wires,
+                            and clean UI/UX interfaces that prioritize usability.</p>
+                    </div>
+
+                    <div class="process-step-card glass-panel reveal" style="animation-delay: 0.3s;">
+                        <div class="step-badge">Step 4</div>
+                        <div class="step-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Building the application</h3>
+                        <p>Implementing clean, readable, modular code adhering to industry standards, object-oriented
+                            principles, and robust error handling mechanisms.</p>
+                    </div>
+
+                    <div class="process-step-card glass-panel reveal" style="animation-delay: 0.4s;">
+                        <div class="step-badge">Step 5</div>
+                        <div class="step-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+                        <h3>Testing thoroughly</h3>
+                        <p>Validating performance across edge cases, running unit/integration tests, evaluating ML model
+                            metrics, and ensuring hardware stability under load.</p>
+                    </div>
+
+                    <div class="process-step-card glass-panel reveal" style="animation-delay: 0.5s;">
+                        <div class="step-badge">Step 6</div>
+                        <div class="step-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Improving continuously</h3>
+                        <p>Gathering feedback, monitoring performance, refactoring bottlenecks, and iteratively
+                            deploying enhancements to deliver scalable software.</p>
+                    </div>
+                </div>
+
+                <div class="process-footer glass-panel text-center reveal">
+                    <p class="process-footer-text">
+                        <i class="fa-solid fa-gem gradient-icon"></i>
+                        "I believe that <strong>clean code, thoughtful design, and continuous improvement</strong> are
+                        essential ingredients for delivering reliable software."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Portfolio Showcase</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Project Filter Buttons -->
+                <div class="project-filters reveal">
+                    <button class="project-filter active" data-filter="all">All Projects</button>
+                    <button class="project-filter" data-filter="ml">Machine Learning & AI</button>
+                    <button class="project-filter" data-filter="embedded">Embedded Systems</button>
+                    <button class="project-filter" data-filter="web">Web Development</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: Autism Spectrum Disorder Prediction -->
+                    <div class="project-card glass-panel reveal" data-category="ml">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project_autism_ml.png"
+                                alt="Autism Spectrum Disorder Prediction using Machine Learning" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary" onclick="openProjectModal('autism-ml')">
+                                    <i class="fa-solid fa-eye"></i> Details
+                                </button>
+                            </div>
+                            <span class="project-category-badge"><i class="fa-solid fa-brain"></i> Machine
+                                Learning</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Autism Spectrum Disorder Prediction using Machine Learning</h3>
+                            <p class="project-description">
+                                Developed a machine learning model capable of predicting Autism Spectrum Disorder using
+                                real-world healthcare data. The project involved data preprocessing, feature
+                                engineering, handling imbalanced datasets with SMOTE, training multiple classification
+                                models, hyperparameter tuning, and evaluating model performance to identify the most
+                                effective predictive solution.
+                            </p>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">NumPy</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">XGBoost</span>
+                                <span class="tech-tag">Machine Learning</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-primary"
+                                    onclick="triggerDemoAlert('Autism Spectrum Disorder ML Model Live Demo Simulation')">
+                                    <i class="fa-solid fa-play"></i> Live Demo
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Smart Solar Tracker -->
+                    <div class="project-card glass-panel reveal" data-category="embedded"
+                        style="animation-delay: 0.1s;">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project_solar_tracker.png" alt="Smart Solar Tracker using Arduino"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary" onclick="openProjectModal('solar-tracker')">
+                                    <i class="fa-solid fa-eye"></i> Details
+                                </button>
+                            </div>
+                            <span class="project-category-badge"><i class="fa-solid fa-microchip"></i> Embedded
+                                Systems</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Smart Solar Tracker using Arduino</h3>
+                            <p class="project-description">
+                                Designed and implemented an intelligent solar tracking system capable of automatically
+                                following sunlight throughout the day using light sensors and servo motors. The system
+                                maximizes solar energy efficiency through real-time adjustments while demonstrating
+                                practical applications of embedded systems and automation.
+                            </p>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">Arduino</span>
+                                <span class="tech-tag">Servo Motors</span>
+                                <span class="tech-tag">LDR Sensors</span>
+                                <span class="tech-tag">Embedded Systems</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-primary" onclick="openProjectModal('solar-tracker')">
+                                    <i class="fa-solid fa-circle-info"></i> View Project
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Personal Portfolio Website -->
+                    <div class="project-card glass-panel reveal" data-category="web" style="animation-delay: 0.2s;">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project_portfolio.png" alt="Personal Portfolio Website"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary" onclick="openProjectModal('portfolio-site')">
+                                    <i class="fa-solid fa-eye"></i> Details
+                                </button>
+                            </div>
+                            <span class="project-category-badge"><i class="fa-solid fa-code"></i> Web Development</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-description">
+                                Designed and developed a modern, fully responsive personal portfolio website showcasing
+                                technical skills, projects, certifications, and career achievements with smooth
+                                animations, clean UI, and optimized user experience.
+                            </p>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Responsive Design</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="#hero" class="btn btn-sm btn-primary">
+                                    <i class="fa-solid fa-globe"></i> Live Demo
+                                </a>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Data Science & Machine Learning Projects -->
+                    <div class="project-card glass-panel reveal" data-category="ml" style="animation-delay: 0.3s;">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project_data_science.png"
+                                alt="Data Science & Machine Learning Projects" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary" onclick="openProjectModal('ds-repo')">
+                                    <i class="fa-solid fa-eye"></i> Details
+                                </button>
+                            </div>
+                            <span class="project-category-badge"><i class="fa-solid fa-chart-line"></i> Data Science &
+                                AI</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Data Science & Machine Learning Projects</h3>
+                            <p class="project-description">
+                                A growing collection of practical machine learning and data analysis projects focused on
+                                solving real-world challenges using modern AI techniques, data visualization, and
+                                predictive analytics.
+                            </p>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">Data Analysis</span>
+                                <span class="tech-tag">Visualization</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-primary" onclick="openProjectModal('ds-repo')">
+                                    <i class="fa-solid fa-folder-open"></i> Explore Repository
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Future AI Projects -->
+                    <div class="project-card glass-panel reveal" data-category="ml" style="animation-delay: 0.4s;">
+                        <div class="project-img-wrapper">
+                            <div class="future-project-banner">
+                                <i class="fa-solid fa-wand-magic-sparkles glowing-icon"></i>
+                                <span>R&D Pipeline</span>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary" onclick="openProjectModal('future-ai')">
+                                    <i class="fa-solid fa-eye"></i> View Roadmap
+                                </button>
+                            </div>
+                            <span class="project-category-badge"><i class="fa-solid fa-atom"></i> Research &
+                                Innovation</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Future AI Projects</h3>
+                            <p class="project-description">
+                                Currently exploring advanced topics in Artificial Intelligence, Deep Learning, and
+                                Intelligent Systems to develop future projects that deliver meaningful technological
+                                impact.
+                            </p>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">Artificial Intelligence</span>
+                                <span class="tech-tag">Deep Learning</span>
+                                <span class="tech-tag">Intelligent Systems</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-primary" onclick="openProjectModal('future-ai')">
+                                    <i class="fa-solid fa-map-location-dot"></i> View Roadmap
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">What I Offer</span>
+                    <h2 class="section-title">Professional <span class="gradient-text">Services</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card glass-panel reveal">
+                        <div class="service-icon icon-cyan"><i class="fa-solid fa-brain"></i></div>
+                        <h3>Artificial Intelligence Solutions</h3>
+                        <p>Designing intelligent applications powered by machine learning and AI technologies.</p>
+                        <a href="#contact" class="service-link">Inquire Solution <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card glass-panel reveal" style="animation-delay: 0.1s;">
+                        <div class="service-icon icon-purple"><i class="fa-solid fa-diagram-next"></i></div>
+                        <h3>Machine Learning Development</h3>
+                        <p>Building predictive models using modern machine learning techniques and data-driven
+                            approaches.</p>
+                        <a href="#contact" class="service-link">Inquire Solution <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card glass-panel reveal" style="animation-delay: 0.2s;">
+                        <div class="service-icon icon-emerald"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3>Software Development</h3>
+                        <p>Developing clean, responsive, and maintainable software solutions for real-world needs.</p>
+                        <a href="#contact" class="service-link">Inquire Solution <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card glass-panel reveal" style="animation-delay: 0.3s;">
+                        <div class="service-icon icon-amber"><i class="fa-solid fa-microchip"></i></div>
+                        <h3>Embedded Systems</h3>
+                        <p>Creating smart hardware solutions using Arduino, sensors, and microcontrollers.</p>
+                        <a href="#contact" class="service-link">Inquire Solution <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card glass-panel reveal" style="animation-delay: 0.4s;">
+                        <div class="service-icon icon-cyan"><i class="fa-solid fa-chart-pie"></i></div>
+                        <h3>Data Analysis</h3>
+                        <p>Transforming raw data into valuable insights through preprocessing, visualization, and
+                            predictive analytics.</p>
+                        <a href="#contact" class="service-link">Inquire Solution <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card glass-panel reveal" style="animation-delay: 0.5s;">
+                        <div class="service-icon icon-purple"><i class="fa-solid fa-bezier-curve"></i></div>
+                        <h3>UI Design & Graphic Design</h3>
+                        <p>Designing clean, engaging user interfaces and digital graphics that enhance user experience.
+                        </p>
+                        <a href="#contact" class="service-link">Inquire Solution <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="timeline-section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Milestones & Journey</span>
+                    <h2 class="section-title">Experience <span class="gradient-text">Timeline</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="timeline-header">
+                                <h3>Computer Science Student</h3>
+                                <span class="timeline-date"><i class="fa-solid fa-calendar-check"></i> Present</span>
+                            </div>
+                            <p>Pursuing a Bachelor's degree in Computer Science while building strong foundations in
+                                algorithms, software engineering, artificial intelligence, and modern software
+                                development.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item reveal" style="animation-delay: 0.1s;">
+                        <div class="timeline-dot"><i class="fa-solid fa-robot"></i></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="timeline-header">
+                                <h3>Artificial Intelligence Projects</h3>
+                                <span class="timeline-date"><i class="fa-solid fa-calendar-check"></i> Present</span>
+                            </div>
+                            <p>Developing practical AI and Machine Learning applications through hands-on projects
+                                focused on solving real-world problems.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item reveal" style="animation-delay: 0.2s;">
+                        <div class="timeline-dot"><i class="fa-solid fa-book-bookmark"></i></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="timeline-header">
+                                <h3>Self-Learning Journey</h3>
+                                <span class="timeline-date"><i class="fa-solid fa-spinner fa-spin-pulse"></i>
+                                    Ongoing</span>
+                            </div>
+                            <p>Continuously expanding my technical knowledge through online courses, certifications,
+                                technical documentation, and project-based learning.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item reveal" style="animation-delay: 0.3s;">
+                        <div class="timeline-dot"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="timeline-header">
+                                <h3>Professional Development</h3>
+                                <span class="timeline-date"><i class="fa-solid fa-spinner fa-spin-pulse"></i>
+                                    Ongoing</span>
+                            </div>
+                            <p>Strengthening expertise in Artificial Intelligence, Data Science, Embedded Systems, and
+                                Software Engineering while building a professional portfolio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Interests Section -->
+        <section class="interests-section">
+            <div class="container">
+                <div class="interests-box glass-panel reveal text-center">
+                    <span class="section-subtitle">Passions & Focus Areas</span>
+                    <h2 class="section-title">Personal <span class="gradient-text">Interests</span></h2>
+                    <div class="title-underline mx-auto"></div>
+
+                    <div class="interests-cloud">
+                        <span class="interest-tag"><i class="fa-solid fa-brain"></i> Artificial Intelligence</span>
+                        <span class="interest-tag"><i class="fa-solid fa-network-wired"></i> Machine Learning</span>
+                        <span class="interest-tag"><i class="fa-solid fa-diagram-project"></i> Deep Learning</span>
+                        <span class="interest-tag"><i class="fa-solid fa-chart-line"></i> Data Science</span>
+                        <span class="interest-tag"><i class="fa-solid fa-code"></i> Software Engineering</span>
+                        <span class="interest-tag"><i class="fa-solid fa-microchip"></i> Embedded Systems</span>
+                        <span class="interest-tag"><i class="fa-solid fa-eye"></i> Computer Vision</span>
+                        <span class="interest-tag"><i class="fa-solid fa-palette"></i> Graphic Design</span>
+                        <span class="interest-tag"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+                        <span class="interest-tag"><i class="fa-solid fa-book-open"></i> Continuous Learning</span>
+                        <span class="interest-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Innovation</span>
+                        <span class="interest-tag"><i class="fa-solid fa-atom"></i> Technology</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Info Cards -->
+                    <div class="contact-info reveal">
+                        <h3 class="contact-heading">Let's Build Something Amazing Together</h3>
+                        <p class="contact-subtext">
+                            I am always interested in discussing Artificial Intelligence, innovative projects, research
+                            opportunities, internships, and collaborations. Feel free to connect with me through any of
+                            the platforms below.
+                        </p>
+
+                        <div class="contact-card-list">
+                            <!-- Email -->
+                            <div class="contact-info-card glass-panel">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:kamalmansourkamal807@gmail.com" class="contact-value">kamalmansourkamal807@gmail.com</a>
+                                </div>
+                                <button class="copy-btn" onclick="copyToClipboard('kamalmansourkamal807@gmail.com', 'Email copied!')"
+                                    title="Copy Email">
+                                    <i class="fa-solid fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <!-- LinkedIn -->
+                            <div class="contact-info-card glass-panel">
+                                <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div>
+                                    <span class="contact-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/kamal-mansour-472911361" target="_blank" rel="noopener noreferrer"
+                                        class="contact-value">linkedin.com/in/kamal-mansour-472911361</a>
+                                </div>
+                                <button class="copy-btn"
+                                    onclick="copyToClipboard('https://www.linkedin.com/in/kamal-mansour-472911361', 'LinkedIn link copied!')"
+                                    title="Copy LinkedIn Link">
+                                    <i class="fa-solid fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="contact-info-card glass-panel">
+                                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <span class="contact-label">Phone</span>
+                                    <a href="tel:+201068105155" class="contact-value">+20 106 810 5155</a>
+                                </div>
+                                <button class="copy-btn"
+                                    onclick="copyToClipboard('+20 106 810 5155', 'Phone number copied!')"
+                                    title="Copy Phone">
+                                    <i class="fa-solid fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="contact-info-card glass-panel">
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">Fayoum, Egypt</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-block">
+                            <span class="social-title">Social Links & Profiles</span>
+                            <div class="social-buttons">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="social-btn github" aria-label="GitHub">
+                                    <i class="fa-brands fa-github"></i> <span>GitHub</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/kamal-mansour-472911361" target="_blank" rel="noopener noreferrer"
+                                    class="social-btn linkedin" aria-label="LinkedIn">
+                                    <i class="fa-brands fa-linkedin-in"></i> <span>LinkedIn</span>
+                                </a>
+                                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                                    class="social-btn youtube" aria-label="YouTube">
+                                    <i class="fa-brands fa-youtube"></i> <span>YouTube</span>
+                                </a>
+                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                                    class="social-btn facebook" aria-label="Facebook">
+                                    <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container glass-panel reveal" style="animation-delay: 0.2s;">
+                        <h3 class="form-title"><i class="fa-solid fa-paper-plane"></i> Send Me a Message</h3>
+                        <form id="contact-form" onsubmit="handleContactSubmit(event)">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="e.g. John Doe">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email Address</label>
+                                <input type="email" id="email" required placeholder="e.g. john@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" required>
+                                    <option value="" disabled selected>Select Inquiry Type</option>
+                                    <option value="AI Collaboration">AI & Machine Learning Collaboration</option>
+                                    <option value="Project Inquiry">Software / Web Project</option>
+                                    <option value="Embedded Systems">Embedded Systems & Hardware</option>
+                                    <option value="Internship / Work">Internship / Research Opportunity</option>
+                                    <option value="General">General Inquiry</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" required
+                                    placeholder="Write your message here..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block glow-btn">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="nav-brand">
+                    <span class="brand-accent">&lt;</span>Kamal<span class="brand-dot">.</span>Mansour<span
+                        class="brand-accent">/&gt;</span>
+                </a>
+                <p>Computer Science Student | Aspiring AI Engineer | Software Engineer</p>
+            </div>
+
+            <div class="footer-contact-links">
+                <a href="mailto:kamalmansourkamal807@gmail.com" class="footer-contact-link">
+                    <i class="fa-solid fa-envelope"></i> kamalmansourkamal807@gmail.com
+                </a>
+                <a href="tel:+201068105155" class="footer-contact-link">
+                    <i class="fa-solid fa-phone"></i> +20 106 810 5155
+                </a>
+                <a href="https://www.linkedin.com/in/kamal-mansour-472911361" target="_blank" rel="noopener noreferrer"
+                    class="footer-contact-link">
+                    <i class="fa-brands fa-linkedin-in"></i> linkedin.com/in/kamal-mansour-472911361
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; 2026 Kamal Mansour Kamal. All Rights Reserved.</p>
+                <p class="credit">Designed & Developed with <i class="fa-solid fa-heart text-danger"></i> by
+                    <strong>Kamal Mansour Kamal</strong>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- CV Modal -->
+    <div id="cv-modal" class="modal-backdrop">
+        <div class="modal-box glass-panel">
+            <button class="modal-close" onclick="closeCVModal()" aria-label="Close CV Modal"><i
+                    class="fa-solid fa-xmark"></i></button>
+
+            <div class="modal-header">
+                <h2><i class="fa-solid fa-file-pdf gradient-icon"></i> Curriculum Vitae — Kamal Mansour Kamal</h2>
+                <div class="modal-actions">
+                    <button class="btn btn-sm btn-primary" onclick="window.print()"><i class="fa-solid fa-print"></i>
+                        Print CV</button>
+                    <button class="btn btn-sm btn-secondary" onclick="simulateCVDownload()"><i
+                            class="fa-solid fa-download"></i> Download PDF</button>
+                </div>
+            </div>
+
+            <div class="modal-body cv-document" id="cv-content">
+                <div class="cv-header-block">
+                    <h1>KAMAL MANSOUR KAMAL</h1>
+                    <p class="cv-subtitle">Computer Science Student | Aspiring AI Engineer | Software Engineer</p>
+                    <p class="cv-meta">Fayoum, Egypt &nbsp;|&nbsp; <a href="mailto:kamalmansourkamal807@gmail.com">kamalmansourkamal807@gmail.com</a> &nbsp;|&nbsp; <a href="tel:+201068105155">+20 106 810 5155</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/kamal-mansour-472911361" target="_blank" rel="noopener noreferrer">linkedin.com/in/kamal-mansour-472911361</a></p>
+                </div>
+
+                <hr class="cv-hr">
+
+                <div class="cv-section">
+                    <h3><i class="fa-solid fa-user"></i> Professional Summary</h3>
+                    <p>I am an aspiring Artificial Intelligence Engineer driven by curiosity, innovation, and continuous
+                        learning. My interests span Artificial Intelligence, Machine Learning, Software Engineering,
+                        Data Science, and Embedded Systems, where I enjoy designing and developing solutions that
+                        address real-world challenges.</p>
+                </div>
+
+                <div class="cv-section">
+                    <h3><i class="fa-solid fa-bullseye"></i> Career Objective</h3>
+                    <p>To build a successful career as an Artificial Intelligence Engineer by continuously advancing my
+                        expertise in Machine Learning, Deep Learning, Data Science, and Software Engineering while
+                        contributing to innovative technologies that solve real-world problems and create lasting
+                        positive impact.</p>
+                </div>
+
+                <div class="cv-section">
+                    <h3><i class="fa-solid fa-laptop-code"></i> Key Technical Skills</h3>
+                    <ul>
+                        <li><strong>Programming Languages:</strong> Python, C++, Java, JavaScript, HTML5, CSS3</li>
+                        <li><strong>AI & Data Science:</strong> Machine Learning, Deep Learning Fundamentals, Data
+                            Analysis, Data Preprocessing, Feature Engineering, Model Evaluation, Scikit-learn, XGBoost,
+                            Pandas, NumPy</li>
+                        <li><strong>Embedded Systems:</strong> Arduino, Microcontrollers, Electronic Sensors, Circuit
+                            Design, Hardware Integration</li>
+                        <li><strong>Web & UI Development:</strong> Responsive Design, UI Development, Front-End
+                            Fundamentals, Figma</li>
+                        <li><strong>Tools & Platforms:</strong> Git, GitHub, Visual Studio Code, Jupyter Notebook, Adobe
+                            Photoshop, Adobe After Effects</li>
+                    </ul>
+                </div>
+
+                <div class="cv-section">
+                    <h3><i class="fa-solid fa-folder-open"></i> Featured Projects</h3>
+                    <ul>
+                        <li><strong>Autism Spectrum Disorder Prediction using ML:</strong> Data preprocessing, SMOTE
+                            balancing, hyperparameter tuning & XGBoost classification.</li>
+                        <li><strong>Smart Solar Tracker using Arduino:</strong> Dual-axis solar tracking automation with
+                            LDR sensors & servo motors.</li>
+                        <li><strong>Personal Portfolio Website:</strong> Modern responsive showcase created with
+                            semantic HTML, CSS3, & vanilla JavaScript.</li>
+                    </ul>
+                </div>
+
+                <div class="cv-section">
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Education & Certification</h3>
+                    <ul>
+                        <li><strong>Bachelor's Degree in Computer Science:</strong> Currently Pursuing.</li>
+                        <li><strong>Self-Learning & Professional Badges:</strong> IBM SkillsBuild, Coursera, Udemy,
+                            YouTube.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Generic Project Details Modal -->
+    <div id="project-modal" class="modal-backdrop">
+        <div class="modal-box glass-panel">
+            <button class="modal-close" onclick="closeProjectModal()" aria-label="Close Project Modal"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <div id="project-modal-content">
+                <!-- Dynamically filled by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
